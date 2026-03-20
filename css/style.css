@@ -1,0 +1,255 @@
+body {
+  font-family: "Trebuchet MS", "Helvetica", "Arial", sans-serif;
+}
+/* ヘッダーロゴ */
+.site-title{
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.site-title .AkiTypeLogo{
+  width: 80px;
+  height: auto;
+  vertical-align: middle;
+  color: orange;
+}
+.AkiTypeLogo:hover{
+  transition: transform 1.0s ease;
+  transform: rotate(180deg);
+}
+
+.title-logo{
+  margin: 0;
+  font-family: "Trebuchet MS", "Helvetica", "Arial", sans-serif;
+  font-size: 3.0rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  
+}
+.logo-tecture{
+  color: #4a90e2;
+}
+
+.title-logo:hover{
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(left, #f69, #fc0, #3c3, #09f, #96f);
+  background-image: -moz-linear-gradient(left, #f69, #fc0, #3c3, #09f, #96f);
+  background-image: -o-linear-gradient(left, #f69, #fc0, #3c3, #09f, #96f);
+  background-image: -ms-linear-gradient(left, #f69, #fc0, #3c3, #09f, #96f);
+}
+
+
+.header-container{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.header-intro{
+  font-size: 1.2rem;
+  gap: 5px;
+  font-weight: normal;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.header-intro p{
+  margin:0;
+}
+.header-intro-aki{
+  font-weight: bold;
+  color: #4a90e2;
+}
+
+/*ナビゲーション*/  
+.nav ul{
+  display: flex;
+  font-weight: 500;
+}
+a{
+  color: inherit;
+}
+a:hover{
+  color: #4a90e2;
+  transition: transform 1.0s ease;
+  transform: rotateY(360deg);
+}
+
+.item{
+  background: #ddd;
+  padding: 0px;
+  border-radius: 8px;
+  border: 3px solid #ccc;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.item-text{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0px;
+  font-weight: 500;
+}
+.item:hover{
+  background: rgba(255, 255, 255, 0.8);
+  filter: blur(1px);
+  transform: scale(1.025);
+}
+#AkiProfile{
+  background: #ececec;
+  padding: 10px;
+  border-radius: 8px;
+  border: 3px solid #94c6ff;
+  transition: all 0.3s ease;
+} 
+#AkiProfile:hover{
+  background: #94c6ff;
+  border-radius: 8px;
+  border: 3px solid #94c6ff;
+  filter: blur(0px);
+  transform: scale(1.0);
+}
+
+/*グリッドレイアウト*/
+.container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1.5fr 1.0fr 1.0fr 1.2fr 1.2fr;
+  grid-template-rows: 220px 100px 130px 150px 30px;
+}
+.box-profile {
+  grid-row: 1 / span 3;
+  /*border: 3px solid orange;
+  background-color: rgb(254, 254, 122);*/
+}
+.box-big1 {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+}
+.box-big3 {
+  grid-column: 4 / span 2;
+  grid-row: 2 / span 2;
+}
+.box-big4 {
+  grid-column: 5 / span 1;
+  grid-row: 1 / span 1;
+}
+.box-big5 {
+  grid-column: 1 / span 5;
+  grid-row: 5 / span 1;
+  text-align: center;
+}
+.box-big5 .item-text{
+  background-color: transparent;
+}
+#high-right{
+  background-image: url("../assets/img/A-KiTypeの名前の由来img.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#high-center{
+  background-image: url("../assets/img/A-KiTypeのコンセプトはimg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#high-left{
+  background-image: url("../assets/img/AkiTypeを開設&解説img.webp");
+  background-size: cover;
+  background-position: center;
+}
+#middle-left{
+  background-image: url("../assets/img/心理学の専門家なら人の思考は丸わかりimg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#middle-center{
+  background-image: url("../assets/img/心は数式で描画できるのかimg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#middle-right{
+  background-image: url("../assets/img/オリジナル理論“AAモデル”を紹介img.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#low-left{
+  background-image: url("../assets/img/心理学を学ぶと何ができる？img.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#low-leftcenter{
+  background-image: url("../assets/img/もののあはれimg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#low-center{
+  background-image: url("../assets/img/Amazon倉庫で働いてみたimg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#low-rightcenter{
+  background-image: url("../assets/img/taiwan-trashcar.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#low-right{
+  background-image: url("../assets/img/人生で一番きつかった仕事img.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/*プロフィール*/
+.profile-title{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 10px;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+.profile-title dt{
+  font-size: 1.1rem;
+}
+.profile-title dd{
+  padding-left: 10%;
+}
+.profile-image{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid #94c6ff;
+}
+.profile-list{
+  margin: 0;
+  font-size: 0.9rem;
+}
+.display-row{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  margin-bottom: 6px;
+}
+.display-row dt{
+  font-weight: bold;
+}
+.display-row dd span{
+  color:#4a90e2;
+  font-weight: bold;
+}
+
+/*フッター*/
+.site-footer {
+  gap: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.footer-credit{
+  margin-bottom: 10px;
+}
+.footer-contact{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}

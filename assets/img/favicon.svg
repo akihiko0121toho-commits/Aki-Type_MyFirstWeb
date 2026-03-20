@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="favicon.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="12.609375"
+     inkscape:cx="32"
+     inkscape:cy="32"
+     inkscape:window-width="1920"
+     inkscape:window-height="1046"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g8" />
+  <circle
+     cx="32"
+     cy="32"
+     r="12"
+     fill="none"
+     stroke="currentColor"
+     stroke-width="3"
+     id="circle1" />
+  <g
+     fill="none"
+     stroke="currentColor"
+     stroke-width="4"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="g8">
+    <!-- 上 -->
+    <path
+       d="M32 4 L28 14 L36 14 Z"
+       id="path1" />
+    <!-- 下 -->
+    <path
+       d="M32 60 L28 50 L36 50 Z"
+       id="path2" />
+    <!-- 左 -->
+    <path
+       d="M4 32 L14 28 L14 36 Z"
+       id="path3" />
+    <!-- 右 -->
+    <path
+       d="M60 32 L50 28 L50 36 Z"
+       id="path4" />
+    <!-- 左上 -->
+    <!-- 右上 -->
+    <!-- 左下 -->
+    <!-- 右下 -->
+    <path
+       d="m 53.213266,11.404846 -9.890312,4.264005 5.669054,5.644628 z"
+       id="path9" />
+    <path
+       d="m 10.72813,11.32554 9.890312,4.264005 -5.669054,5.644628 z"
+       id="path10" />
+    <path
+       d="M 11.679802,52.639408 21.570114,48.375403 15.90106,42.730775 Z"
+       id="path11" />
+    <path
+       d="m 52.737429,53.194551 -9.890312,-4.264005 5.669054,-5.644628 z"
+       id="path12" />
+  </g>
+</svg>
