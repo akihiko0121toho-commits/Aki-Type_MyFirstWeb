@@ -93,7 +93,6 @@ a:hover{
 }
 .item:hover{
   background: rgba(255, 255, 255, 0.8);
-  filter: blur(1px);
   transform: scale(1.025);
 }
 #AkiProfile{
