@@ -96,10 +96,10 @@ a:hover{
   transform: scale(1.025);
 }
 #AkiProfile{
-  background: #ececec;
+  background: #ccc;
   padding: 10px;
   border-radius: 8px;
-  border: 3px solid #94c6ff;
+  border: 3px solid #ccc;
   transition: all 0.3s ease;
 } 
 #AkiProfile:hover{
@@ -219,7 +219,7 @@ a:hover{
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
-  border: 3px solid #94c6ff;
+  border: 3px solid #4a90e2;
 }
 .profile-list{
   margin: 0;
@@ -234,7 +234,7 @@ a:hover{
   font-weight: bold;
 }
 .display-row dd span{
-  color:#4a90e2;
+  color: #4a90e2;
   font-weight: bold;
 }
 
