@@ -32,8 +32,13 @@ body {
   text-transform: uppercase;
   
 }
-.logo-tecture{
+.logo-AKI{
   color: #4a90e2;
+  margin: 0;
+}
+.logo-TYPE{
+  /* color: #f69; */
+  margin: 0;
 }
 
 .title-logo:hover{
@@ -46,11 +51,37 @@ body {
   background-image: -ms-linear-gradient(left, #f69, #fc0, #3c3, #09f, #96f);
 }
 
-
 .header-container{
   display: flex;
   gap: 40px;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .header-container{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .site-logo{
+    display: flex;
+    justify-content: flex start;
+    margin: 50px 0;
+  }
+  .AkiTypeLogo{
+    width: 200px;
+    height: 200px;
+    display: block;
+    flex-shrink: 0;
+  }
+  .title-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex start;
+    line-height: 0.95;
+    margin-top: 2px;
+  }
+  .nav {
+    display: none;
+  }
 }
 .header-intro{
   font-size: 1.2rem;
@@ -67,6 +98,13 @@ body {
 .header-intro-aki{
   font-weight: bold;
   color: #4a90e2;
+}
+@media (max-width: 768px) {
+  .header-intro{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
 }
 
 /*ナビゲーション*/  
@@ -206,13 +244,14 @@ a:hover{
     grid-template-rows: auto;
   }
   #high-right, #high-center, #high-left, #middle-left, #middle-center, #middle-right, #low-left, #low-leftcenter, #low-center, #low-rightcenter, #low-right {
-    grid-column: 1;
+    grid-column: 1 / span 1;
     grid-row: auto;
     min-height: 200px;
   }
   .box-big5  {
-    grid-row: 15;
-    height: 30px;
+    grid-column: auto;
+    grid-row: 15 / span 1;
+    height: 20px;
   }
 }
 
