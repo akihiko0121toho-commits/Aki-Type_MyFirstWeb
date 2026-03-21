@@ -1,6 +1,11 @@
 body {
   font-family: "Trebuchet MS", "Helvetica", "Arial", sans-serif;
 }
+@media (max-width: 768px) {
+  body{
+    font-size: 14px;
+  }
+}
 /* ヘッダーロゴ */
 .site-title{
   display: flex;
@@ -119,8 +124,6 @@ a:hover{
 }
 .box-profile {
   grid-row: 1 / span 3;
-  /*border: 3px solid orange;
-  background-color: rgb(254, 254, 122);*/
 }
 .box-big1 {
   grid-column: 2 / span 2;
@@ -197,7 +200,21 @@ a:hover{
   background-size: cover;
   background-position: center;
 }
-
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  #high-right, #high-center, #high-left, #middle-left, #middle-center, #middle-right, #low-left, #low-leftcenter, #low-center, #low-rightcenter, #low-right {
+    grid-column: 1;
+    grid-row: auto;
+    min-height: 200px;
+  }
+  .box-big5  {
+    grid-row: 15;
+    height: 30px;
+  }
+}
 
 /*プロフィール*/
 .profile-title{
