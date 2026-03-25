@@ -1,0 +1,232 @@
+/* 全体 */
+.article-list-main {
+  width: 100%;
+}
+
+.list-layout {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 32px;
+  box-sizing: border-box;
+  gap: 32px;
+}
+
+/* 縮小ヘッダー */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(6px);
+  transition: padding 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.site-logo {
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  transition: padding 0.3s ease;
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 0;
+  padding: 10px;
+  transition: padding 0.3s ease, gap 0.3s ease;
+}
+
+.AkiTypeLogo {
+  width: 120px;
+  height: auto;
+  transition: width 0.3s ease;
+}
+
+.title-logo {
+  margin: 0;
+  line-height: 0.95;
+  transition: transform 0.3s ease;
+}
+
+.logo-AKI,
+.logo-TYPE {
+  display: block;
+  font-size: 3rem;
+  transition: font-size 0.3s ease;
+}
+
+.site-header.scrolled .site-title {
+  padding: 10px 20px;
+  gap: 10px;
+}
+
+.site-header.scrolled .AkiTypeLogo {
+  width: 56px;
+}
+
+.site-header.scrolled .logo-AKI,
+.site-header.scrolled .logo-TYPE {
+  font-size: 1.5rem;
+}
+
+/* 左ナビ */
+.sidebar {
+  position: sticky;
+  top: 110px;
+  width: 280px;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.sidebar-inner {
+  padding: 24px 20px;
+  box-sizing: border-box;
+}
+
+.sidebar-title {
+  margin: 0 0 24px;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.category-list,
+.sub-category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-item {
+  margin-bottom: 24px;
+}
+.sub-category-list :hover {
+  background-color: #ccc;
+  transition: transform 0.3s ease;
+  transform: translateX(4px);
+}
+
+.main-category {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.sub-category-list li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+/* メイン */
+.main-content {
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 4カラムグリッド */
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* カード */
+.article-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.article-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.article-meta {
+  padding-top: 12px;
+}
+
+.article-title {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.article-tags {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* レスポンシブ */
+@media (max-width: 1200px) {
+  .article-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 960px) {
+  .list-layout {
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .sidebar {
+    width: 220px;
+  }
+
+  .article-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .list-layout {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .sidebar-inner {
+    position: static;
+    padding: 0;
+  }
+
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-title {
+    padding: 18px 16px;
+  }
+
+  .AkiTypeLogo {
+    width: 72px;
+  }
+
+  .logo-AKI,
+  .logo-TYPE {
+    font-size: 2rem;
+  }
+
+  .site-header.scrolled .AkiTypeLogo {
+    width: 44px;
+  }
+
+  .site-header.scrolled .logo-AKI,
+  .site-header.scrolled .logo-TYPE {
+    font-size: 1.2rem;
+  }
+}
+

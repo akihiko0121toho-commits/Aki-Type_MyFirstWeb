@@ -1,0 +1,207 @@
+.header-container{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .header-container{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .site-logo{
+    display: flex;
+    justify-content: flex start;
+    margin: 50px 0;
+  }
+  .AkiTypeLogo{
+    width: 200px;
+    height: 200px;
+    display: block;
+    flex-shrink: 0;
+  }
+  .title-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex start;
+    line-height: 0.95;
+    margin-top: 2px;
+  }
+  .nav {
+    display: none;
+    border: 0px 2px solid #ccc;
+  }
+}
+
+.item{
+  background: #ddd;
+  padding: 0px;
+  border-radius: 8px;
+  border: 3px solid #ccc;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.item-text{
+  font-size: 1.0rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0px;
+  font-weight: 500;
+}
+.item:hover{
+  background: rgba(255, 255, 255, 0.8);
+  transform: scale(1.025);
+}
+#AkiProfile{
+  background: #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+} 
+#AkiProfile:hover{
+  background: #94c6ff;
+  border-radius: 8px;
+  border: 1px solid #94c6ff;
+  filter: blur(0px);
+  transform: scale(1.0);
+}
+
+/*グリッドレイアウト*/
+.container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1.5fr 1.0fr 1.0fr 1.2fr 1.2fr;
+  grid-template-rows: 220px 100px 130px 150px 30px;
+}
+.box-profile {
+  grid-row: 1 / span 3;
+}
+.box-big1 {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+}
+.box-big3 {
+  grid-column: 4 / span 2;
+  grid-row: 2 / span 2;
+}
+.box-big4 {
+  grid-column: 5 / span 1;
+  grid-row: 1 / span 1;
+}
+.box-big5 {
+  grid-column: 1 / span 5;
+  grid-row: 5 / span 1;
+  text-align: center;
+}
+.box-big5 .item-text{
+  background-color: transparent;
+}
+#high-right{
+  background-image: url("../assets/img/A-KiTypeの名前の由来img.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#high-center{
+  background-image: url("../assets/img/A-KiTypeのコンセプトはimg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#high-left{
+  background-image: url("../assets/img/AkiTypeを開設&解説img.webp");
+  background-size: cover;
+  background-position: center;
+}
+#middle-left{
+  background-image: url("../assets/img/心理学の専門家なら人の思考は丸わかりimg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#middle-center{
+  background-image: url("../assets/img/心は数式で描画できるのかimg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#middle-right{
+  background-image: url("../assets/img/オリジナル理論“AAモデル”を紹介img.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#low-left{
+  background-image: url("../assets/img/心理学を学ぶと何ができる？img.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#low-leftcenter{
+  background-image: url("../assets/img/もののあはれimg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#low-center{
+  background-image: url("../assets/img/amazon倉庫で働いてみたimg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#low-rightcenter{
+  background-image: url("../assets/img/taiwan-trashcar.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#low-right{
+  background-image: url("../assets/img/人生で一番きつかった仕事img.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  #high-right, #high-center, #high-left, #middle-left, #middle-center, #middle-right, #low-left, #low-leftcenter, #low-center, #low-rightcenter, #low-right {
+    grid-column: 1 / span 1;
+    grid-row: auto;
+    min-height: 200px;
+  }
+  .box-big5  {
+    grid-column: auto;
+    grid-row: 15 / span 1;
+    height: 20px;
+  }
+}
+
+/*プロフィール*/
+.profile-title{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 10px;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+}
+.profile-title dt{
+  font-size: 1.1rem;
+}
+.profile-title dd{
+  padding-left: 10%;
+}
+.profile-image{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid #4a90e2;
+}
+.profile-list{
+  margin: 0;
+  font-size: 0.9rem;
+}
+.display-row{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  margin-bottom: 6px;
+}
+.display-row dt{
+  font-weight: bold;
+}
+.display-row dd span{
+  color: #4a90e2;
+  font-weight: bold;
+}
